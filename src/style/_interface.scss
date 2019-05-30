@@ -1,0 +1,39 @@
+body {
+    background-color: #ffffff;
+    font-size: 16px;
+    font-family: 'SFUI Text', sans-serif;
+    color: #000000;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1164px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+.button {    
+    display: inline-block;
+    padding: 16px 46px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 27px;
+    border: 2px solid #ffffff;
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        background: url(../img/interface/arrow.png) center center no-repeat;
+        width: 72px;
+        height: 12px;
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
