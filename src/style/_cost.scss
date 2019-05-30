@@ -1,0 +1,69 @@
+.cost {
+    padding: 90px 0;
+    &__title {
+        margin-bottom: 63px;
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        padding: 185px 69px 95px;
+        border-radius: 4px;
+        position: relative;
+        &:after {
+            content: '01';
+            position: absolute;
+            right: 55px;
+            top: 60px;
+            font-family: 'Proxima Nova', sans-serif;
+            opacity: 0.1;
+            color: #ffffff;
+            font-size: 210px;
+        }
+        &_1 {
+            background-color: rgba(#91aa59, 0.5);
+        }
+        &_2 {
+            background-color: rgba(#91aa59, 0.7);
+        }
+        &_3 {
+            background-color: rgba(#91aa59, 0.9);
+        }
+    }
+    &__nlevel {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+    }
+    &__level {
+        margin-bottom: 21px;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+    }
+    &__pay {
+        margin-bottom: 25px;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__schedule {
+        margin-bottom: 12px;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+    }
+    &__button {
+        margin-top: 28px;
+        padding: 13px 68px;
+        font-size: 19px;
+    }
+}

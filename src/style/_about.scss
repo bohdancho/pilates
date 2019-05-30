@@ -1,0 +1,54 @@
+.about {
+    padding: 100px 0;
+    &-container {
+        display: flex;
+    }
+    &__main {
+        margin-right: 20px;
+    }
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__text {
+        font-weight: 300;
+        line-height: 24px;
+        &_top {
+            margin-bottom: 30px;
+        }
+        &_bot {
+            margin-bottom: 30px;
+        }
+    }
+    &__link {
+        padding-right: 12px;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        color: #2a4f37;
+        letter-spacing: 1.44px;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 7px;
+            height: 14px;
+            background: url(../img/about/arrow.png) center center no-repeat
+        }
+    }
+    &__images {
+        padding-top: 13px;
+        position: relative;
+    }
+    &__img2 {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: -100px;
+        z-index: 1;
+    }
+}

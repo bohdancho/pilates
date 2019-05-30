@@ -8,11 +8,21 @@
     &-container {
         z-index: 5;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
     &__title {
         margin-bottom: 26px;
         color: #ffffff;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-size: 58px;
         font-weight: 300;
         line-height: 72px;
@@ -52,7 +62,7 @@
 }
 
 .navbar {
-    margin-bottom: 136px;
+    // margin-bottom: 136px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,7 +143,7 @@
     &__link {
         color: #ffffff;
         text-decoration: none;
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 40px;
         font-weight: 700;
     }

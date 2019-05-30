@@ -11,10 +11,6 @@ body {
     width: 1164px;
 }
 
-#main {
-    transition: margin-left .5s;
-}
-
 .button {    
     display: inline-block;
     padding: 16px 46px;
@@ -24,6 +20,8 @@ body {
     font-weight: 500;
     border-radius: 27px;
     border: 2px solid #ffffff;
+    background: none;
+    cursor: pointer;
     position: relative;
     &:after {
         content: '';
@@ -35,5 +33,29 @@ body {
         right: -44px;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
+
+.section {
+    &__title {
+        padding-left: 57px;
+        position: relative;
+        opacity: 0.87;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 30px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 38px;
+            height: 3px;
+            background-color: rgba(#000000, 0.87);
+        }
     }
 }
