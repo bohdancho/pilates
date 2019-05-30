@@ -19,9 +19,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     function openNav() {
         document.getElementById("nav").style.width = "100%";
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     };
 
     function closeNav() {
         document.getElementById("nav").style.width = "0";
+        document.getElementsByTagName('body')[0].style.overflow = 'scroll';
     };
 });
