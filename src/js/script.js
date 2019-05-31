@@ -35,4 +35,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
         nextArrow: '.slider__next',
         dots: true
     });
+
+    
+    setEqualHeight($('.slider__item-container'));
+
+    function setEqualHeight(columns) {
+        var currentHeight;
+        var tallestcolumn = 0;
+        columns.each(function() {
+            currentHeight = $(this).height();
+            if(currentHeight > tallestcolumn) {
+                tallestcolumn = currentHeight;
+            }
+        });
+        columns.height(tallestcolumn);
+    }
+    
 });
