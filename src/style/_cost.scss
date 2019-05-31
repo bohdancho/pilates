@@ -1,5 +1,5 @@
 .cost {
-    padding: 90px 0;
+    padding: 90px 0 45px;
     &__title {
         margin-bottom: 63px;
     }
@@ -12,7 +12,6 @@
         border-radius: 4px;
         position: relative;
         &:after {
-            content: '01';
             position: absolute;
             right: 55px;
             top: 60px;
@@ -23,12 +22,21 @@
         }
         &_1 {
             background-color: rgba(#91aa59, 0.5);
+            &:after {
+                content: '01';
+            }
         }
         &_2 {
             background-color: rgba(#91aa59, 0.7);
+            &:after {
+                content: '02';
+            }
         }
         &_3 {
             background-color: rgba(#91aa59, 0.9);
+            &:after {
+                content: '03';
+            }
         }
     }
     &__nlevel {
