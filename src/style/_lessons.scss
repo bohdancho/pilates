@@ -1,5 +1,5 @@
 .lessons {
-    padding: 45px 0 20px;
+    padding: 45px 0;
     &__main {
         padding: 0 95px;
     }
@@ -13,26 +13,6 @@
         &_right {
             flex-direction: row-reverse;
         }
-        // &_1 {
-        //     .lessons__textblock {
-        //         margin-right: 99px;
-        //     }
-        // }
-        // &_2 {
-        //     .lessons__textblock {
-        //         margin-left: 40px;
-        //     }
-        // }
-        // &_3 {
-        //     .lessons__textblock {
-        //         margin-right: 99px;
-        //     }
-        // }
-        // &_4 {
-        //     .lessons__textblock {
-        //         margin-right: 99px;
-        //     }
-        // }
     }
     &__textblock {
         width: 40%;

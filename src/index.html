@@ -20,10 +20,10 @@
 		<div class="container header-container">
 			<div class="navbar">
 				<div class="navbar-logo">
-					<img src="img/header/logo.png" alt="logo" class="navbar-logo__img">
+					<img src="img/interface/logo.png" alt="logo" class="navbar-logo__img">
 					<span class="navbar-logo__text">Pilates+</span>
 				</div>
-				<button id="navbar-btn" class="navbar-btn">
+				<button class="navbar-btn js-navbar-btn">
 					<span class="navbar-btn__line"></span>
 				</button>
 				<a href="tel=+79183650707" class="navbar-phone">
@@ -45,25 +45,25 @@
 			</div>
 		</div>
 
-		<nav id="nav" class="nav">
+		<nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__item">
-					<a href="#about" class="nav__link">О пилатесе</a>
+					<a href="#about" class="nav__link js-nav__link">О пилатесе</a>
 				</li>
 				<li class="nav__item">
-					<a href="#cost" class="nav__link">Расписание и стоимость</a>
+					<a href="#cost" class="nav__link js-nav__link">Расписание и стоимость</a>
 				</li>
 				<li class="nav__item">
-					<a href="#lessons" class="nav__link">Как проходят занятия</a>
+					<a href="#lessons" class="nav__link js-nav__link">Как проходят занятия</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">Отзывы</a>
+					<a href="#comments" class="nav__link js-nav__link">Отзывы</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">Контакты</a>
+					<a href="#" class="nav__link js-nav__link">Контакты</a>
 				</li>
 			</ul>
-			<div id="nav__closebtn" class="nav__closebtn">&times;</div>
+			<div class="nav__closebtn js-nav__closebtn">&times;</div>
 		</nav>
 	</header>
 	<main>
@@ -204,6 +204,83 @@
 						<img src="img/lessons/img4.png" alt="pilates image" class="lessons__img">
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="comments" id="comments">
+			<div class="container">
+				<h2 class="section__title comments__title">
+					Отзывы
+				</h2>
+				<div class="slider">
+					<img class="slider__prev" src="img/comments/prev.svg">
+					<div class="slider__container">
+						<div class="slider__item">
+							<div class="slider__item-container">
+								<img src="img/comments/img1.png" alt="human" class="slider__img">
+								<div class="slider__textblock">
+									<div class="slider__name">
+										Вероника Кулешова
+									</div>
+									<div class="slider__age">
+										25 лет
+										<a class="slider__link slider__link_vk" href="#"><img class="slider__vk" src="img/comments/vk.svg" alt="vk icon"></a>
+										<a class="slider__link slider__link_insta" href="#"><img class="slider__insta" src="img/comments/insta.svg" alt="instagram icon"></a>
+									</div>
+									<p class="slider__text">
+										Хожу на пилатес уже пять месяцев. 
+										После десяти занятий уже увидела результат: тело подтянулось, улучшилась осанка, появился пресс. 
+										И самое главное, пропал сильный изгиб поясничного отдела, который меня очень беспокоил.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__item-container">
+								<img src="img/comments/img2.png" alt="human" class="slider__img">
+								<div class="slider__textblock">
+									<div class="slider__name">
+										Елизавета Смирнова
+									</div>
+									<div class="slider__age">
+										29 лет
+										<a class="slider__link slider__link_vk" href="#"><img class="slider__vk" src="img/comments/vk.svg" alt="vk icon"></a>
+										<a class="slider__link slider__link_insta" href="#"><img class="slider__insta" src="img/comments/insta.svg" alt="instagram icon"></a>
+									</div>
+									<p class="slider__text">
+										Очень нравятся занятия, хожу уже пять месяцев. На занятиях делаем много упражнений на пресс, 
+										бедра и спину. Мышцы подтянулись, появился рельеф и хорошее настроение :)								
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__item-container">
+								<img src="img/comments/img3.png" alt="human" class="slider__img">
+								<div class="slider__textblock">
+									<div class="slider__name">
+										Кристина Егорова
+									</div>
+									<div class="slider__age">
+										23 года
+										<a class="slider__link slider__link_vk" href="#"><img class="slider__vk" src="img/comments/vk.svg" alt="vk icon"></a>
+										<a class="slider__link slider__link_insta" href="#"><img class="slider__insta" src="img/comments/insta.svg" alt="instagram icon"></a>
+									</div>
+									<p class="slider__text">
+										Рекомендую заниматься всем! У меня сколиоз и спина часто болит после рабочего дня. 
+										После занятий появилась лекость в мышцах и свобода движений. Приходите!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img class="slider__next" src="img/comments/next.svg">
+				</div>
+				
+				<!-- <ul class="slider__nav">
+					<li class="slider__nav__wrap"><button class="slider__nav__dot slider__nav__dot_1"></button></li>
+					<li class="slider__nav__wrap"><button class="slider__nav__dot slider__nav__dot_2"></button></li>
+					<li class="slider__nav__wrap"><button class="slider__nav__dot slider__nav__dot_3"></button></li>
+				</ul> -->
 			</div>
 		</section>
 	</main>

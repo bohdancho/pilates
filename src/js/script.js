@@ -1,29 +1,38 @@
+//= component/jquery.js
+//= component/slick.js
+
 document.addEventListener('DOMContentLoaded', function(event) { 
 
     /*
         Hamburger Navigation
     */
 
-    document.getElementById('nav__closebtn').addEventListener('click', closeNav);
-    document.getElementById('navbar-btn').addEventListener('click', openNav);
-    
-    function linkCloseNav() {
-        let link = document.getElementsByClassName('nav__link');
-        for (var i = 0; i < link.length; i++) {
-            // console.log(link[i]);
-            link[i].addEventListener('click', closeNav);
-        };
+    document.querySelector('.js-nav__closebtn').addEventListener('click', closeNav);
+    document.querySelector('.js-navbar-btn').addEventListener('click', openNav);
+
+    for (var i = 0; i < document.querySelectorAll('.js-nav__link').length; i++) {
+        document.querySelectorAll('.js-nav__link')[i].addEventListener('click', closeNav);
     };
 
-    linkCloseNav();
-
     function openNav() {
-        document.getElementById("nav").style.width = "100%";
-        document.getElementsByTagName('body')[0].style.overflowY = 'hidden';
+        document.querySelector('.nav').style.width = '100%';
+        document.querySelector('body').style.overflowY = 'hidden';
     };
 
     function closeNav() {
-        document.getElementById("nav").style.width = "0";
-        document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
+        document.querySelector('.nav').style.width = '0';
+        document.querySelector('body').style.overflowY = 'scroll';
     };
+
+    /*
+
+        Slider
+
+    */
+
+    $('.slider__container').slick({
+        prevArrow: '.slider__prev',
+        nextArrow: '.slider__next',
+        dots: true
+    });
 });
