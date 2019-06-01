@@ -38,6 +38,10 @@
         margin-bottom: 90px;
         display: flex;
         justify-content: space-between;
+        &__wrap {
+            position: relative;
+            padding-right: 20px;
+        }
     }
     &__input {
         padding-bottom: 10px;
@@ -52,6 +56,9 @@
             &::placeholder {
                 opacity: 0;
             }
+        }
+        &.popup__error {
+            border-color: red;
         }
     }
     &__bottom {
@@ -100,12 +107,19 @@
                     opacity: 1;
                 }
             }
+            &.popup__error ~ .popup__check__mark {
+                background-color: red;
+            }
         }
         &__text {
             display: inline-block;
             // margin-left: 21px;
             line-height: 32px;
         }
+    }
+    label.popup__error {
+        position: absolute;
+        top: 30px;
     }
     &__submit {
         padding: 12px 68px;

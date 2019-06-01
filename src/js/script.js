@@ -1,5 +1,7 @@
 //= component/jquery.js
 //= component/slick.js
+//= component/maskedinput.js
+//= component/validate.js
 
 document.addEventListener('DOMContentLoaded', function(event) { 
 
@@ -81,4 +83,54 @@ document.addEventListener('DOMContentLoaded', function(event) {
         return false;
     });
     
+    /*
+
+        Mask input
+
+    */
+  
+    $('.js-popup__input_phone').mask("+7 (999) 999-99-99", {
+        autoclear: false
+    });
+
+    /*
+
+        Form validation
+
+    */
+
+    $('.js-popup__form').validate({
+        errorClass: 'popup__error',
+        rules: {
+            name: {
+                required: true,
+            },
+            phone: {
+                required: true
+            },
+            mail: {
+                required: true,
+                email: true
+            },
+            agree: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: 'Введите, пожалуйста, Ваше имя'
+            },
+            phone: {
+                required: 'Введите, пожалуйста, Ваш номер телефона'
+            },
+            mail: {
+                required: 'Введите, пожалуйста, Ваш E-Mail адрес',
+                email: 'Введите, пожалуйста, корректный E-Mail адрес'
+            },
+            agree: {
+                required: 'Это обязательное поле'
+            }
+        }
+    })
+
 });

@@ -347,15 +347,21 @@
 		<p class="popup__text">
 			Оставьте контакты и наши менеджеры свяжуться в ближайшее время
 		</p>
-		<form method="get" class="popup__form">
+		<form method="get" class="popup__form js-popup__form">
 			<div class="popup__inputs">
-				<input type="text" placeholder="Имя" class="popup__input">
-				<input type="tel" placeholder="Телефон" class="popup__input">
-				<input type="text" placeholder="E-mail" class="popup__input">
+				<div class="popup__inputs__wrap">
+					<input type="text" name="name" placeholder="Имя" class="popup__input">
+				</div>
+				<div class="popup__inputs__wrap">
+					<input type="tel" name="phone" placeholder="Телефон" class="popup__input js-popup__input_phone">
+				</div>
+				<div class="popup__inputs__wrap">
+					<input type="text" name="mail" placeholder="E-mail" class="popup__input">
+				</div>
 			</div>
 			<div class="popup__bottom">
 				<label class="popup__check">
-					<input type="checkbox" class="popup__check__box">
+					<input type="checkbox" name="agree" class="popup__check__box">
 					<span class="popup__check__mark"></span>
 					<span class="popup__check__text">Я согласен на обработку персональных данных</span>
 				</label>
