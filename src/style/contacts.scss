@@ -1,0 +1,31 @@
+.contacts {
+    padding-top: 70px;
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__map {
+        padding-bottom: 158px;
+        background: url('../img/contacts/contacts-bg.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    &__card {
+        padding: 70px 60px;
+        display: inline-block;
+        box-shadow: 0 6px 15px rgba(33, 33, 33, 0.2);
+        background-color: #91aa59;
+        color: #ffffff;
+    }
+    &__item {
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    &__text {
+        font-weight: 300;
+    }
+    &__mail {
+        color: #ffffff;
+    }
+}

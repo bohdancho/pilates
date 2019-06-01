@@ -51,4 +51,34 @@ document.addEventListener('DOMContentLoaded', function(event) {
         columns.height(tallestcolumn);
     }
     
+    
+    /*
+
+        Modal
+
+    */
+
+    for (var i = 0; i < document.querySelectorAll('.js-cost__button').length; i++) {
+        document.querySelectorAll('.js-cost__button')[i].addEventListener('click', function() {
+            $('.js-popup').fadeIn();
+        });
+    };
+    
+    document.querySelector('.js-popup__close').addEventListener('click', function() {
+        $('.js-popup').fadeOut();
+    });
+
+    /*
+
+        Smooth scroll
+
+    */
+
+    $('.js-smooth-scroll').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
+    
 });

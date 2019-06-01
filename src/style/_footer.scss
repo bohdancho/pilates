@@ -1,0 +1,35 @@
+.footer {
+    padding: 39px 0;
+    background-color: #91aa59;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-size: 14px;
+        letter-spacing: 1.52px;
+        color: #ffffff;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        display: block;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+    &__icon {
+        &_vk {
+            width: 25px;
+        }
+        &_insta {
+            width: 18px;
+        }
+        &_fb {
+            width: 18px;
+        }
+    }
+}

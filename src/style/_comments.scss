@@ -1,5 +1,5 @@
 .comments {
-    padding: 25px 0;
+    padding: 25px 0 70px;
     &__title {
         margin-bottom: 65px;
     }
@@ -27,7 +27,6 @@
                 background: url('../img/comments/dots.png') center center no-repeat;
                 right: 69px;
                 top: 48px;
-                // transform: translate(50%, 50%);
             }
         }
     }

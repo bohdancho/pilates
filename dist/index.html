@@ -39,7 +39,7 @@
 				<p class="header__text">
 					Твое здоровое тело через 10 занятий
 				</p>
-				<a href="#cost" class="button">
+				<a href="#cost" class="button js-smooth-scroll">
 					Смотреть расписание
 				</a>
 			</div>
@@ -60,10 +60,10 @@
 					<a href="#comments" class="nav__link js-nav__link">Отзывы</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link js-nav__link">Контакты</a>
+					<a href="#contacts" class="nav__link js-nav__link">Контакты</a>
 				</li>
 			</ul>
-			<div class="nav__closebtn js-nav__closebtn">&times;</div>
+			<div class="nav__closebtn js-nav__closebtn"><img src="img/interface/close-white.svg" alt="close"></div>
 		</nav>
 	</header>
 	<main>
@@ -82,7 +82,7 @@
 						и спины, улучшает гибкость мышц и связок, подвижность суставов и избавляет 
 						от дискомфорта в позвоночнике
 					</p>
-					<a href="#" class="about__link">
+					<a href="#lessons" class="about__link js-smooth-scroll">
 						Подробнее
 					</a>
 				</div>
@@ -113,7 +113,7 @@
 						<div class="cost__schedule">
 							пт	9:00 — 10:00
 						</div>
-						<button class="button cost__button">Записаться</button>
+						<button class="button cost__button js-cost__button">Записаться</button>
 					</div>
 					<div class="cost__item cost__item_2">
 						<div class="cost__nlevel">Уровень</div>
@@ -130,7 +130,7 @@
 						<div class="cost__schedule">
 							пт	18:15 — 19:45
 						</div>
-						<button class="button cost__button">Записаться</button>
+						<button class="button cost__button js-cost__button">Записаться</button>
 					</div>
 					<div class="cost__item cost__item_3">
 						<div class="cost__nlevel">Уровень</div>
@@ -145,7 +145,7 @@
 						<div class="cost__schedule">
 							пт	20:00 — 21:30
 						</div>
-						<button class="button cost__button">Записаться</button>
+						<button class="button cost__button js-cost__button">Записаться</button>
 					</div>
 				</div>
 			</div>
@@ -275,15 +275,95 @@
 					</div>
 					<img class="slider__next" src="img/comments/next.svg">
 				</div>
-				
-				<!-- <ul class="slider__nav">
-					<li class="slider__nav__wrap"><button class="slider__nav__dot slider__nav__dot_1"></button></li>
-					<li class="slider__nav__wrap"><button class="slider__nav__dot slider__nav__dot_2"></button></li>
-					<li class="slider__nav__wrap"><button class="slider__nav__dot slider__nav__dot_3"></button></li>
-				</ul> -->
+			</div>
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<h2 class="section__title contacts__title">
+					Контакты
+				</h2>
+			</div>
+			<div class="contacts__map">
+				<div class="container">
+					<address class="contacts__card">
+						<div class="contacts__item">
+							<div class="contacts__subtitle">
+								Адрес  
+							</div>
+							<div class="contacts__text">
+								г. Кропоткин <br>
+								ул. Дугинец 10а
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__subtitle">
+								Телефон
+							</div>
+							<div class="contacts__text">
+								+7 918 365 06 07
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__subtitle">
+								E-mail
+							</div>
+							<div class="contacts__text">
+								<a class="contacts__mail" href="mailto: pilatesplus@gmail.com">pilatesplus@gmail.com</a>
+							</div>
+						</div>
+					</address>
+				</div>
 			</div>
 		</section>
 	</main>
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__text">
+				Pilates Plus, 2017 &copy;
+			</div>
+			<div class="navbar-logo">
+				<img src="img/interface/logo.png" alt="logo" class="navbar-logo__img">
+				<span class="navbar-logo__text">Pilates+</span>
+			</div>
+			<div class="footer__links">
+				<a href="#" class="footer__link">
+					<img src="img/footer/vk.svg" alt="vkontakte icon" class="footer__icon footer__icon_vk">
+				</a>
+				<a href="#" class="footer__link">
+					<img src="img/footer/fb.svg" alt="instagram icon" class="footer__icon footer__icon_fb">
+				</a>
+				<a href="#" class="footer__link">
+					<img src="img/footer/insta.svg" alt="facebook icon" class="footer__icon footer__icon_insta">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<div class="popup js-popup">
+		<img src="img/interface/close-black.svg" alt="close" class="popup__close js-popup__close">
+		<h2 class="popup__title">
+			Хочешь записаться на занятие?
+		</h2>
+		<p class="popup__text">
+			Оставьте контакты и наши менеджеры свяжуться в ближайшее время
+		</p>
+		<form method="get" class="popup__form">
+			<div class="popup__inputs">
+				<input type="text" placeholder="Имя" class="popup__input">
+				<input type="tel" placeholder="Телефон" class="popup__input">
+				<input type="text" placeholder="E-mail" class="popup__input">
+			</div>
+			<div class="popup__bottom">
+				<label class="popup__check">
+					<input type="checkbox" class="popup__check__box">
+					<span class="popup__check__mark"></span>
+					<span class="popup__check__text">Я согласен на обработку персональных данных</span>
+				</label>
+				<input class="popup__submit" type="submit" value="Записаться">
+			</div>
+		</form>
+	</div>
+
 	<script src="js/script.js"></script>
 </body>
 </html>

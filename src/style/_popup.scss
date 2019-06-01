@@ -1,0 +1,121 @@
+.popup {
+    padding: 100px;
+    width: 1168px;
+    max-width: 100%;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 0 9px 23px 9px rgba(27, 27, 27, 0.2);
+    border-radius: 4px;
+    background-color: #ffffff;
+    &__close {
+        position: absolute;
+        right: 60px;
+        top: 40px;
+        cursor: pointer;
+        width: 35px;
+    }
+    &__title {
+        margin-bottom: 40px;
+        opacity: 0.87;
+        font-family: 'Proxima Nova';
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+    }
+    &__text {
+        margin-bottom: 70px;
+        color: #111111;
+        font-family: "Proxima Nova";
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__inputs {
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+        padding-bottom: 10px;
+        display: block;
+        border: none;
+        border-bottom: 2px solid #111111;
+        &::placeholder {
+            color: #111111;
+            transition: 0.2s;
+        }
+        &:focus {
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__check {
+        position: relative;
+        user-select: none;
+        cursor: pointer;
+        height: 32px;
+        display: block;
+        padding-left: 50px;
+        &__mark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            background-color: #eeeeee;
+            transition: 0.2s;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                opacity: 0;
+                left: 9px;
+                top: 9px;
+                width: 15px;
+                height: 15px;
+                background: url(../img/interface/checked.svg) center center no-repeat;
+                background-size: 100% 100%;
+                transition: 0.2s;
+            }
+        }
+        &__box {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .popup__check__mark {
+                background-color: #91aa59;
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        &__text {
+            display: inline-block;
+            // margin-left: 21px;
+            line-height: 32px;
+        }
+    }
+    &__submit {
+        padding: 12px 68px;
+        display: block;
+        border-radius: 27px;
+        background-color: #91aa59;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+    }
+}

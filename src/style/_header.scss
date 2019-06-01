@@ -149,11 +149,9 @@
     }
     &__closebtn {
         cursor: pointer;
-        font-size: 100px;
-        font-family: 'SFUI Text';
-        font-weight: 300;
-        color: #ffffff;
         position: absolute;
+        width: 40px;
+        height: 40px;
         top: 50px;
         right: 50px;
         transform: translate(-50%, -50%);
