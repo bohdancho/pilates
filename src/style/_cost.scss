@@ -75,3 +75,43 @@
         font-size: 19px;
     }
 }
+
+@media screen and (max-width: 1365px) {
+    .cost {
+        padding: 50px 0 30px;
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__item {
+            padding: 95px 28px 41px;
+            &:after {
+                font-size: 115px;
+                right: 20px;
+                top: 20px;
+            }
+        }
+        &__nlevel {
+            font-size: 12px;
+        }
+        &__level {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        &__pay {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        &__schedule {
+            font-size: 16px;
+        }
+        &__button {
+            margin-top: 15px;
+            padding: 5px 20px;
+            &:after {
+                width: 37px;
+                background-position: center right;
+                right: -26px;
+            }
+        }
+    }
+}

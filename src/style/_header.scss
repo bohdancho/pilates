@@ -1,8 +1,6 @@
 .header {
     padding-top: 33px;
     height: 100vh;
-    background: #ffffff url(../img/header/header-bg.png) center right no-repeat;
-    background-size: auto 90%;
     position: relative;
     overflow: hidden;
     &-container {
@@ -36,20 +34,23 @@
         line-height: 30px;
     }
     &-bg {
+        &__wrap_big {
+            width: 100%;
+            bottom: 0;
+            left: -40%;
+            position: absolute;
+        }
         &__round {
             border-radius: 50%;
             position: absolute;
             z-index: 0;
             &_big {
+                position: static;
                 background-color: #91aa59;
-                height: 180%;
-                padding-right: 100%;
-                transform: translate(-50%, -50%);
-                left: 10%;
-                top: 10%;
+                width: 100%;
+                padding-top: 100%;
             }
             &_empty {
-                // background-color: #91aa59;
                 border: 8px solid #91aa59;
                 opacity: 0.6;
                 right: -24px;
@@ -58,11 +59,36 @@
                 width: 56px;
             }
         }
+        &__girl {
+            top: 50%;
+            right: 55px;
+            transform: translateY(-50%);
+            height: 90%;
+            position: absolute;
+            &__img {
+                height: 100%;
+                z-index: 10;
+                position: relative;
+            }
+            &__wrap {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                width: 70%;
+                height: 70%;
+            }
+            &__round {
+                width: 100%;
+                padding-top: 100%;
+                background-color: #91aa59;
+                opacity: 0.6;
+            }
+        }
     }
 }
 
 .navbar {
-    // margin-bottom: 136px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -155,5 +181,32 @@
         top: 50px;
         right: 50px;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .header {
+        padding: 23px 0;
+        &-bg {
+            &__wrap_big {
+                left: -31%;
+            }
+            &__girl {
+                right: -30px;
+                &__wrap {
+                    display: none;
+                }
+            }
+        }
+    }
+    .navbar {
+        &-logo {
+            &__img {
+                width: 50px;
+            }
+            &__text {
+                font-size: 10px;
+            }
+        }
     }
 }

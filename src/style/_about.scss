@@ -44,11 +44,45 @@
         padding-top: 13px;
         position: relative;
     }
+    &__img_mobile {
+        display: none;
+    }
     &__img2 {
         position: absolute;
         display: block;
         bottom: 0;
         left: -100px;
         z-index: 1;
+        width: 318px;
+    }
+}
+@media screen and (max-width: 1365px) {
+    .about {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 47px;
+        }
+        &__text {
+            &_top {
+                margin-bottom: 24px;
+            }
+            &_bot {
+                margin-bottom: 50px;
+            }
+        }
+        &__images {
+            padding-top: 80px;
+        }
+        &__img1 {
+            display: none;
+        }
+        &__img_mobile {
+            display: block;
+        }
+        &__img2 {
+            width: 156px;
+            bottom: -53px;
+            left: -78px;
+        }
     }
 }

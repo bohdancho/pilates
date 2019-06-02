@@ -16,7 +16,9 @@
         color: #ffffff;
     }
     &__item {
-        margin-bottom: 25px;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
     }
     &__subtitle {
         margin-bottom: 10px;
@@ -27,5 +29,22 @@
     }
     &__mail {
         color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .contacts {
+        &__title {
+            margin-bottom: 32px;
+        }
+        &__card {
+            padding: 35px 30px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__map {
+            padding-bottom: 70px;
+        }
     }
 }
